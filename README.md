@@ -1,5 +1,9 @@
 # bijective_base
 
+[![docs](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/bijective_base/mod.ts)
+[![codecov](https://codecov.io/gh/N8Brooks/bijective_base/branch/main/graph/badge.svg?token=ZU38QLNOCG)](https://codecov.io/gh/N8Brooks/bijective_base)
+[![build](https://github.com/N8Brooks/bijective_base/actions/workflows/ci.yaml/badge.svg)](https://github.com/N8Brooks/bijective_base/actions/workflows/ci.yaml)
+
 Tools for converting to and from
 [bijective numeration](https://en.wikipedia.org/wiki/Bijective_numeration).
 
@@ -8,7 +12,7 @@ Tools for converting to and from
 Converts non-negative integers to bijective base 26.
 
 ```ts
-import { toBijectiveBase26 } from "./mod.ts";
+import { toBijectiveBase26 } from "https://deno.land/x/bijective_base/mod.ts";
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 
 assertEquals(toBijectiveBase26(1), "a");
@@ -31,7 +35,7 @@ assertEquals(toBijectiveBase26(703), "aaa");
 Converts bijective base 26 number to integers.
 
 ```ts
-import { fromBijectiveBase26 } from "./mod.ts";
+import { fromBijectiveBase26 } from "https://deno.land/x/bijective_base/mod.ts";
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 
 assertEquals(fromBijectiveBase26("A"), 1);
