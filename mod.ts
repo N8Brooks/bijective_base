@@ -4,7 +4,7 @@ const BASE = 26;
 const LOWERCASE_A_CHAR_CODE = "a".charCodeAt(0);
 
 /** Matches valid bijective base 26 numbers */
-const BIJECTIVE_BASE_26_PATTERN = /^[a-z0-9]*$/;
+const BIJECTIVE_BASE_26_PATTERN = /^[a-z]*$/;
 
 export function toBijectiveBase26(n: number): string {
   if (!Number.isInteger(n) || n < 0) {
